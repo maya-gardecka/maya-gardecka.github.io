@@ -24,14 +24,14 @@ body {
   margin: 3% auto;
   background-color: var(--gray1);
 }
-#tool-selection {
+#page-selection {
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
 }
-#tool-selection a {
+#page-selection a {
   color: black;
 }
-#tool-selection a:hover {
+#page-selection a:hover {
   background-color: var(--highlight);
 }

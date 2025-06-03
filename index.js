@@ -10,7 +10,7 @@ const pages = {
 };
 
 function loadToolButtons() {
-  const toolContainer = document.getElementById("tool-selection");
+  const pagesContainer = document.getElementById("page-selection");
   const ol = document.createElement("ol");
   Object.entries(pages).forEach(([toolName, toolInfo]) => {
     const main_li = document.createElement("li");
@@ -27,7 +27,7 @@ function loadToolButtons() {
     }
     main_li.appendChild(ul);
     ol.appendChild(main_li);
-    toolContainer.appendChild(ol);
+    pagesContainer.appendChild(ol);
   });
 }
 
