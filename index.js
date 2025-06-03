@@ -2,7 +2,7 @@ const mainContainer = document.getElementById("main-container");
 
 const pages = {
   "Helpdesk Tools": [
-    "helpdesk/helpdesk.html",
+    "../helpdesk/helpdesk.html",
     "A dynamic and responsive site built using HTML, CSS, and JavaScript",
     "Set tools for the helpdesk employee",
   ],
