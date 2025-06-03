@@ -1,0 +1,37 @@
+:root {
+  --gray1: #cbcfd2;
+  --gray2: #a7adb2;
+  --gray3: #767b8d;
+  --primary: #7ba6bd;
+  --highlight: #6cc2f0;
+  --dark: #414f57;
+  --lowlight: #1c2b33;
+  --text: #212324;
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body {
+  max-width: 75%;
+  margin: 3% auto;
+  background-color: var(--gray1);
+}
+#tool-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+#tool-selection a {
+  color: black;
+}
+#tool-selection a:hover {
+  background-color: var(--highlight);
+}
