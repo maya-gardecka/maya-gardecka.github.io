@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HD Tools</title>
     <link rel="stylesheet" href="../styles/main-styles.css" />
-    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/help-styles.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <h6>Help Desk Tools</h6>
+    <h3>Help Desk Tools</h3>
+    <div id="hd-container">
+      <div id="tool-button-set"></div>
+
+      <div id="current-tool-display">
+        <div id="a-tool" class="one-tool">
+          <h4>Phontetic Spelling Generator</h4>
+          <div id="a-first">
+            <label for="word-input">Enter word:</label>
+            <div style="display: flex; gap: 10%">
+              <input type="text" id="word-input" />
+              <button id="translateBtn">Translate</button>
+            </div>
+          </div>
+          <div id="a-second"></div>
+        </div>
+        <div id="b-tool" class="one-tool">
+          <h4>B</h4>
+        </div>
+        <div id="c-tool" class="one-tool">
+          <h4>C</h4>
+        </div>
+        <div id="d-tool" class="one-tool">
+          <h4>D</h4>
+        </div>
+      </div>
+    </div>
+    <footer style="font-size: 0.75rem">Maya Gardecka, June 2025</footer>
   </body>
+  <script src="scripts/runHelpdesk.js" type="module"></script>
 </html>

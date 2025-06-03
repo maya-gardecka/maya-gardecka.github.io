@@ -1,0 +1,58 @@
+:root {
+  --btn-height: 3rem;
+  --btn-width: 6rem;
+  --btn-font-size: 1rem;
+}
+@media (max-width: 600px) {
+  :root {
+    --btn-height: 1rem;
+    --btn-width: 2rem;
+    --btn-font-size: 0.6rem;
+  }
+}
+html {
+  height: 100%;
+}
+.whole-button {
+  min-width: var(--btn-width);
+  height: var(--btn-height);
+  font-size: var(--btn-font-size);
+  border: 1px solid black;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  background-color: var(--gray1);
+}
+.whole-button:hover {
+  filter: brightness(75%);
+  transition: all 0.3s ease;
+}
+.hd-container {
+  width: 100%;
+}
+.one-tool {
+  display: none;
+}
+.inner-tool {
+  width: 94%;
+}
+#a-second {
+  display: flex;
+  flex-wrap: wrap;
+}
+.letter-box {
+  padding: 2%;
+}
+#tool-button-set {
+  padding: 3% 0;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  flex-wrap: wrap;
+}
+#current-tool-display {
+  min-height: 60vh;
+  /* padding: 3% 0; */
+}
