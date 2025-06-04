@@ -23,6 +23,7 @@ html {
   justify-content: center;
   padding: 2%;
 }
+#translateBtn:hover,
 .letter-box:hover,
 .whole-button:hover {
   filter: brightness(75%);
@@ -76,8 +77,11 @@ html {
   flex: 2;
   font-size: 1.2rem;
   padding: 1%;
-  margin-right: 20%;
+  max-width: 60%;
+  /* margin-right: 20%; */
 }
 #translateBtn {
+  flex: 1;
   padding: 4px 10px;
+  max-width: 25%;
 }
