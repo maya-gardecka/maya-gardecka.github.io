@@ -29,16 +29,33 @@ const alphabet = {
 
 const aSecond = document.getElementById("a-second");
 
+function formatIndexZeroLetter(w) {
+  let word = w.toUpperCase();
+  let firstLetter = word[0];
+  word = word.slice(1);
+  return `<span class="first-letter">${firstLetter}</span>${word}`;
+}
+
 function translate(word) {
   aSecond.innerHTML = "";
+  let currentRow = document.createElement("div");
+  currentRow.className = "row";
+  aSecond.appendChild(currentRow);
 
   for (const c of word) {
     const letter = c.toLowerCase();
     if (/^[a-z]$/.test(letter)) {
       const letterBox = document.createElement("div");
       letterBox.className = "letter-box";
-      letterBox.textContent = alphabet[letter];
-      aSecond.appendChild(letterBox);
+
+      const formattedWord = formatIndexZeroLetter(alphabet[letter]);
+      letterBox.innerHTML = formattedWord;
+
+      currentRow.appendChild(letterBox);
+    } else if (letter === " ") {
+      currentRow = document.createElement("div");
+      currentRow.className = "row";
+      aSecond.appendChild(currentRow);
     }
   }
 }

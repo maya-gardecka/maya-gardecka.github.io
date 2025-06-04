@@ -2,6 +2,7 @@
   --btn-height: 3rem;
   --btn-width: 6rem;
   --btn-font-size: 1rem;
+  max-width: 1200px;
 }
 @media (max-width: 600px) {
   :root {
@@ -17,14 +18,13 @@ html {
   min-width: var(--btn-width);
   height: var(--btn-height);
   font-size: var(--btn-font-size);
-  border: 1px solid black;
   display: flex;
   white-space: nowrap;
   align-items: center;
   justify-content: center;
   padding: 2%;
-  background-color: var(--gray1);
 }
+.letter-box:hover,
 .whole-button:hover {
   filter: brightness(75%);
   transition: all 0.3s ease;
@@ -39,11 +39,23 @@ html {
   width: 94%;
 }
 #a-second {
+  padding: 2%;
+  gap: 6%;
+}
+.first-letter {
+  color: var(--highlight);
+  font-size: 2rem;
+}
+.row {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 .letter-box {
+  justify-content: center;
+  align-items: center;
+  gap: 6%;
   padding: 2%;
+  font-weight: bold;
 }
 #tool-button-set {
   padding: 3% 0;
@@ -55,4 +67,18 @@ html {
 #current-tool-display {
   min-height: 60vh;
   /* padding: 3% 0; */
+}
+#in-and-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#word-input {
+  flex: 2;
+  font-size: 1.2rem;
+  padding: 1%;
+  margin-right: 20%;
+}
+#translateBtn {
+  padding: 4px 10px;
 }
