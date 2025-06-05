@@ -1,15 +1,13 @@
+import { showPwOptions } from "./passwordGenerator.js";
 import { spellPhonetically } from "./phonetic.js";
 
 const buttonInfo = {
   "Phonetic Spelling": spellPhonetically,
-  // nameB: B,
+  "Password Generator": showPwOptions,
   // nameC: C,
   // nameD: D,
 };
 
-function B() {
-  return document.getElementById("b-tool");
-}
 function C() {
   return document.getElementById("c-tool");
 }
