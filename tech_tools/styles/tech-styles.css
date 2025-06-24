@@ -1,0 +1,104 @@
+body {
+  height: 90%;
+  width: 70%;
+}
+.a-tag {
+  color: black;
+}
+.a-tag:hover {
+  background-color: var(--highlight);
+}
+.hidden {
+  display: none;
+}
+.tool-btn {
+  padding: 1% 2%;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.clicked {
+  background-color: lightsteelblue;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+#main_box {
+  min-height: 400px;
+  width: 100%;
+}
+#tools_nav {
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
+  gap: 4%;
+  flex-wrap: wrap;
+}
+#hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#reset_btn {
+  height: 50%;
+  padding: 1% 2%;
+  /* border: 1px solid black;
+  border-radius: 4px; */
+}
+#ftr {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.7rem;
+}
+#in_and_go {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+#label_in {
+  width: 70%;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+#word_input {
+  flex: 2;
+  font-size: 1.2rem;
+  padding: 1%;
+  max-width: 70%;
+  margin-left: 4%;
+}
+#translate_btn {
+  flex: 1;
+  padding: 4px 10px;
+  max-width: 20%;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#translate_btn:hover,
+.letter-box:hover,
+.tool-btn:hover {
+  filter: brightness(75%);
+  transition: all 0.3s ease;
+}
+#phonetic_out {
+  padding: 2%;
+  gap: 6%;
+}
+.first-letter {
+  color: var(--highlight);
+  font-size: 2rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.letter-box {
+  justify-content: center;
+  align-items: center;
+  gap: 6%;
+  padding: 2%;
+  font-weight: bold;
+}
